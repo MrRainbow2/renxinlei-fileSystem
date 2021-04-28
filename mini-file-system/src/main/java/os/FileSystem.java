@@ -60,10 +60,10 @@ public class FileSystem {
             }
             System.out.println("inodeBlock加载完成。。。。。。");
             System.out.println("耗时:" + (System.currentTimeMillis() - startTime) + "ms");
-
+            root = iNodeBlocks[0].getiNodes()[0];
+            root.setName("/");
         }
-        root = iNodeBlocks[0].getiNodes()[0];
-        root.setName("/");
+
         return errCode;
     }
 
