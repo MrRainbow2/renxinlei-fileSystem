@@ -17,7 +17,7 @@ shell.command.CommandStrategy : 提供了基本指令支持。 时间指令自�
 
 
 - 在格式化的DISK文件上初始化文件系统
-	<img src="./pic/initial_smokeOS.png" width=500 height=300 alt="disk layout" />
+	<img src="pic/initial_smokeOS.png" width=500 height=300 alt="disk layout" />
 	
 	- 第1行存储superblock，记录磁盘block总数，inode总数，inode已使用数，数据块block已使用数，数据块block开始位置，空闲数据块block位置
 	- 第2行到第51行存储inode，每个block可以存储4个inode，即每个inode有16个字符
